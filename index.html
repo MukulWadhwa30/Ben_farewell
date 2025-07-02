@@ -17,9 +17,15 @@
       align-items: center;
     }
 
-    h1 {
-      font-size: 3em;
+    h2 {
+      font-size: 2em;
       margin-top: 40px;
+      color: #00ffe5;
+      text-shadow: 2px 2px #000;
+    }
+    h4 {
+      font-size: 1.5em;
+      margin-top: 5px;
       color: #00ffe5;
       text-shadow: 2px 2px #000;
     }
@@ -72,11 +78,22 @@
     .message-box span {
       display: inline;
     }
+	footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 2.2em;      /* Make it bigger */
+  font-weight: bold;     /* Make it bold */
+  color: #00ffe5;        /* Bright turquoise color */
+  text-shadow: 1px 1px #000; /* Adds subtle shadow for readability */
+  z-index: 2;
+}
+
   </style>
 </head>
 <body>
 
-  <h1>💻 Benjamin’s Coding Journey</h1>
+  <h2>💻 Benjamin’s Coding Journey</h2>
+  <h4>    Farewell Message  </h4>
   <div class="badge"></div>
 
   <button id="revealButton">Click to Reveal Message</button>
@@ -84,6 +101,9 @@
   <div class="message-box" id="farewellMessage">
     <span id="text"></span>
   </div>
+  
+  <footer>By Mukul Wadhwa</footer>
+
 
   <script>
     const message = `Hey Benjamin!
